@@ -7,7 +7,7 @@
             Console.WriteLine("Welcome to Basic Core Program");
             Console.WriteLine("Enter your choice ");
             Console.WriteLine("------------------------------------");
-            Console.WriteLine("1 For: Flip a Coin Head and Tail.\t 2.Select Value is Leap Year Or not \t 3.Select Power of 2 Number\t 4.harmonic series\t 5.the prime factor \t6.Quotient and Remainder\t7.swap number\t8.check even & odd Number\t9.check alphabet is vowel or consonant");
+            Console.WriteLine("1 For: Flip a Coin Head and Tail.\t 2.Select Value is Leap Year Or not \t 3.Select Power of 2 Number\t 4.harmonic series\t 5.the prime factor \t6.Quotient and Remainder\t7.swap number\t8.check even & odd Number\t9.check alphabet is vowel or consonant\t10.find greter value");
             int selection = Convert.ToInt32(Console.ReadLine());
 
             switch (selection)
@@ -46,6 +46,9 @@
                     break;
                 case 9:
                     checkalphabet.VowelOrConsonant();
+                    break;
+                case 10:
+                    largestNumber.threeLagerNumber();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");

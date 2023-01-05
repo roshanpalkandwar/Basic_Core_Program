@@ -7,7 +7,7 @@
             Console.WriteLine("Welcome to Basic Core Program");
             Console.WriteLine("Enter your choice ");
             Console.WriteLine("------------------------------------");
-            Console.WriteLine("1 For: Flip a Coin Head and Tail.\t 2.Select Value is Leap Year Or not \t 3.Select Power of 2 Number\t 4.harmonic series ");
+            Console.WriteLine("1 For: Flip a Coin Head and Tail.\t 2.Select Value is Leap Year Or not \t 3.Select Power of 2 Number\t 4.harmonic series\t 5.the prime factor ");
             int selection = Convert.ToInt32(Console.ReadLine());
 
             switch (selection)
@@ -28,6 +28,11 @@
                     break;
                 case 4:
                     HarmonicPoblem.harmonic();
+                    break;
+                case 5:
+
+                    PrimeFactorization p1 = new PrimeFactorization();
+                    p1.PrimeFactors();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection.");
